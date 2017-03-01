@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/variables.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-combined.min.css">
+		<script src="js/scripts.js"></script>
+		<script src="js/jquery.dlmenu.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script>
+				$.getScript('js/bootstrap-carousel.js',function(){
+					 $('.carousel').carousel();
+			 });
+
+			 $('#myCarousel').on('slid',function(){
+				 $('.blocky').animate({marginLeft:"+=16%"},100).animate({marginLeft:"-=20%"},300).animate({marginLeft:"+=4%"},600);
+			 })
+
+			 window.onload = width_textImg;
+		</script>
+		<title>Index</title>
+	</head>
+
+	<body>
+		<div class="cont-general">
+			<header class="header">
+			  <img src="img/logo-tronex.jpg" class="logo-tronex">
+				<div class="idiomas">
+					<a href="">
+						<img src="img/en-US.gif" alt="">
+					</a>
+					<a href="">
+						<img src="img/es-ES.gif" alt="">
+					</a>
+				</div>
+	      <nav class="menu-pri">
+	        <ul>
+	          <li><a href="">QUIENES SOMOS</a></li>
+	          <li><a href="">UNIDADES DE NEGOCIO</a></li>
+	          <li><a href="">CONECTAT</a></li>
+	          <li><a href="">RECOPILA</a></li>
+	          <li><a href="">INNOVACIÓN</a></li>
+	          <li><a href=""><img src="img/logo-contacto.png" alt=""></a></li>
+	        </ul>
+					<ul class="buscador-menu">
+						<li>
+							<a href="">
+								<img src="img/icono-buscar.png" alt="">
+								<input type="text" name="name" value="">
+							</a>
+						</li>
+					</ul>
+	      </nav>
+				<button class="c-hamburger c-hamburger--htx" onclick="mostrarMenu()">
+				  <span>toggle menu</span>
+				</button>
+			</header>
+			<nav class="menu-des">
+				<li><a href="">QUIENES SOMOS</a></li>
+				<li><a href="">INNOVACIÓN</a></li>
+				<li><a href="">CONTÁCTANOS</a></li>
+			</nav>
+			<section class="cont-slider">
+				<div id="myCarousel" class="carousel slide">
+				  <div class="carousel-inner">
+				    <div class="active item">
+				      <div class="fill" style="background-image:url('img/fondo1.jpg');">
+				        <div class="container">
+				          <div class="blocky">
+										<div class="pull-left pull-middle light-color">
+											<span class="textoSlider-bold">
+												LOREM IPSUM DOLOR SIT AMET
+											</span>
+											<span class="textoSlider-light">
+												CONSECTETUR ADIPSCING ELIT. SED GRAVIDA FACILISIS TURPIS
+											</span>
+										</div>
+									</div>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <div class="fill" style="background-image:url('img/fondo1.jpg');">
+				        <div class="container">
+				          <div class="blocky">
+										<div class="pull-left pull-middle light-color">
+											<span class="textoSlider-bold">
+												LOREM IPSUM DOLOR SIT AMET2
+											</span>
+											<span class="textoSlider-light">
+												CONSECTETUR ADIPSCING ELIT. SED GRAVIDA FACILISIS TURPIS
+											</span>
+										</div>
+									</div>
+				        </div>
+				      </div>
+				    </div>
+				    <div class="item">
+				      <div class="fill" style="background-image:url('img/fondo1.jpg');">
+				        <div class="container">
+				          <div class="blocky">
+										<div class="pull-left pull-middle light-color">
+											<span class="textoSlider-bold">
+												LOREM IPSUM DOLOR SIT AMET3
+											</span>
+											<span class="textoSlider-light">
+												CONSECTETUR ADIPSCING ELIT. SED GRAVIDA FACILISIS TURPIS
+											</span>
+										</div>
+								</div>
+				        </div>
+				      </div>
+				    </div>
+					</div>
+	  			<a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
+				</div>
+			</section>
+			<section class="cont-texImg">
+				<article class="texImg-hor">
+					<div>
+						<p>PRODUCTOS DE CONSUMO MASIVO</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida facilisis turpis a blandit enim accumsan non.</p>
+						<a href="">Conoce más >></a>
+					</div>
+					<div>
+						<img src="img/img1.png">
+					</div>
+				</article>
+				<article class="texImg-hor">
+					<div>
+						<p>TRONEX SOLUCIONES LOGÍSTICAS</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida facilisis turpis a blandit enim accumsan non.</p>
+						<a href="">Conoce más >></a>
+					</div>
+					<div>
+						<img src="img/img2.png">
+					</div>
+				</article>
+				<article class="texImg-hor">
+					<div>
+						<p>TRONEX INDUSTRIAL</p>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed gravida facilisis turpis a blandit enim accumsan non.</p>
+						<a href="">Conoce más >></a>
+					</div>
+					<div>
+						<img src="img/img3.png">
+					</div>
+				</article>
+			</section>
+		</div>
+		<footer>
+			<div class="par1Footer">
+				<p>TRONEX S.A. / Medellín - Colombia / Teléfono: +57 4 448-8090</p>
+				<img src="img/tronex-footer.png">
+			</div>
+			<div class="textFooter">
+				<p>NOSOTROS</p>
+				<a href="">¿Quiénes somos?</a>
+				<a href="">Innocavación</a>
+				<a href="">Contáctenos</a>
+			</div>
+			<div class="textFooter">
+				<p>UNIDADES DE NEGOCIOS</p>
+				<a href="">Productos de consumo masivo</a>
+				<a href="">Innovación</a>
+				<a href="">Contáctenos</a>
+			</div>
+		</footer>
+		<script>
+		(function() {
+		  "use strict";
+		  var toggles = document.querySelectorAll(".c-hamburger");
+		  for (var i = toggles.length - 1; i >= 0; i--) {
+		    var toggle = toggles[i];
+		    toggleHandler(toggle);
+		  };
+
+		  function toggleHandler(toggle) {
+		    toggle.addEventListener( "click", function(e) {
+		      e.preventDefault();
+		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+		    });
+		  }
+		})();
+		</script>
+	</body>
+</html>

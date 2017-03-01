@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=none" />
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/variables.css">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap-combined.min.css">
+		<script src="js/scripts.js"></script>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		<script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+		<script>
+				$.getScript('js/bootstrap-carousel.js',function(){
+					 $('.carousel').carousel();
+			 });
+
+			 $('#myCarousel').on('slid',function(){
+				 $('.blocky').animate({marginLeft:"+=16%"},100).animate({marginLeft:"-=20%"},300).animate({marginLeft:"+=4%"},600);
+			 })
+
+			 window.onload = width_textImg;
+		</script>
+		<title>Index</title>
+	</head>
+
+	<body>
+		<div class="cont-general">
+			<header class="header">
+			  <img src="img/logo-tronex.jpg" class="logo-tronex">
+				<div class="idiomas">
+					<a href="">
+						<img src="img/en-US.gif" alt="">
+					</a>
+					<a href="">
+						<img src="img/es-ES.gif" alt="">
+					</a>
+				</div>
+	      <nav class="menu-pri">
+	        <ul>
+	          <li><a href="">QUIENES SOMOS</a></li>
+	          <li><a href="">UNIDADES DE NEGOCIO</a></li>
+	          <li><a href="">CONECTAT</a></li>
+	          <li><a href="">RECOPILA</a></li>
+	          <li><a href="">INNOVACIÓN</a></li>
+	          <li><a href=""><img src="img/logo-contacto.png" alt=""></a></li>
+	        </ul>
+					<ul class="buscador-menu">
+						<li>
+							<a href="">
+								<img src="img/icono-buscar.png" alt="">
+								<input type="text" name="name" value="">
+							</a>
+						</li>
+					</ul>
+	      </nav>
+				<button class="c-hamburger c-hamburger--htx" onclick="mostrarMenu()">
+				  <span>toggle menu</span>
+				</button>
+			</header>
+			<nav class="menu-des">
+				<li><a href="">QUIENES SOMOS</a></li>
+				<li><a href="">INNOVACIÓN</a></li>
+				<li><a href="">CONTÁCTANOS</a></li>
+			</nav>
+			<section class="cont-banner">
+				<img src="img/quienes-banner.png" alt="" />
+				<div>
+					<p class="banner-text"><b>Somos una compañía especializada en la fabricación, comercialización y distribución</b> de productos de calidad superior.</p>
+				</div>
+			</section>
+			<section class="cont-des">
+				<div class="tittle-h1"><h1>DESTACADO</h1></div>
+				<div class="cont-slider-des">
+					<div class="slider-des">
+						<div class="slider-des-item">
+							<img src="img/itemdes1.png" alt="">
+							<p>somos miembros de la andi</p>
+							<p>(Asociación Nacional de Empresarios), y fundador del Comité de Pilas en la cámara de electrodomésticos del comité de iluminación y somos socio fundador de Cluster de Energía de Medellín</p>
+						</div>
+						<div class="slider-des-item">
+							<img src="img/itemdes2.png" alt="">
+							<p>participamos en proyectos de innovación social</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit sint voluptatum consequatur similique recusandae neque mollitia nemo accusantium debitis rem, dignissimos totam cupiditate quasi suscipit nihil! Animi numquam inventore, voluptas?</p>
+						</div>
+						<div class="slider-des-item">
+							<img src="img/itemdes3.png" alt="">
+							<p>premio presidente digital 3.0</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos suscipit ab necessitatibus, eligendi distinctio culpa magnam accusantium maiores odit eveniet minima voluptatum sunt corporis tempore aspernatur, unde quae quaerat ut!</p>
+						</div>
+						<div class="slider-des-item">
+							<img src="img/itemdes4.png" alt="">
+							<p>reconocimiento a tronex</p>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+					</div>
+				</div>
+				<div class="backA-slider-des" onclick="backSliderD()"></div>
+				<div class="forwA-slider-des" onclick="forwSliderD()"></div>
+			</section>
+			<section class="cont-text2Col">
+				<div class="tittle-h1"><h1>QUIENES SOMOS</h1></div>
+				<div class="textBox">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum nulla, eaque dolorum, fuga cumque ab facilis deleniti praesentium facere rem culpa ipsam reprehenderit saepe sed repudiandae veritatis animi veniam alias.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa maiores odit maxime optio amet sint non tempora nam consequuntur molestias, sequi delectus nemo a repudiandae, veritatis facere minus earum. Eum.</p>
+				</div>
+				<div class="textBox">
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ea nostrum exercitationem odio, commodi eius fugiat placeat iusto enim quibusdam consequatur et porro aliquid laborum quae qui obcaecati perspiciatis labore.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum deserunt amet nesciunt accusantium voluptates ullam possimus vero dolor facere quidem numquam, esse vitae ex sunt expedita, nihil commodi ipsam voluptatum.</p>
+				</div>
+			</section>
+
+		</div>
+		<footer>
+			<div class="par1Footer">
+				<p>TRONEX S.A. / Medellín - Colombia / Teléfono: +57 4 448-8090</p>
+				<img src="img/tronex-footer.png">
+			</div>
+			<div class="textFooter">
+				<p>NOSOTROS</p>
+				<a href="">¿Quiénes somos?</a>
+				<a href="">Innocavación</a>
+				<a href="">Contáctenos</a>
+			</div>
+			<div class="textFooter">
+				<p>UNIDADES DE NEGOCIOS</p>
+				<a href="">Productos de consumo masivo</a>
+				<a href="">Innovación</a>
+				<a href="">Contáctenos</a>
+			</div>
+		</footer>
+		<script>
+		(function() {
+		  "use strict";
+		  var toggles = document.querySelectorAll(".c-hamburger");
+		  for (var i = toggles.length - 1; i >= 0; i--) {
+		    var toggle = toggles[i];
+		    toggleHandler(toggle);
+		  };
+
+		  function toggleHandler(toggle) {
+		    toggle.addEventListener( "click", function(e) {
+		      e.preventDefault();
+		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+		    });
+		  }
+		})();
+		</script>
+	</body>
+</html>
